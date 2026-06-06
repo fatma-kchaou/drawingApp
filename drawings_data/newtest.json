@@ -1,0 +1,81 @@
+[
+  {
+    "className": "com.example.demo1.shapes.Point",
+    "data": {
+      "x": 277.6,
+      "y": 160.0
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Point",
+    "data": {
+      "x": 372.8,
+      "y": 140.8
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Point",
+    "data": {
+      "x": 402.4,
+      "y": 213.59999999999997
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Point",
+    "data": {
+      "x": 288.0,
+      "y": 236.0
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Point",
+    "data": {
+      "x": 222.39999999999998,
+      "y": 225.59999999999997
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Point",
+    "data": {
+      "x": 196.8,
+      "y": 174.39999999999998
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Point",
+    "data": {
+      "x": 195.2,
+      "y": 169.60000000000002
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Circle",
+    "data": {
+      "center": {
+        "x": 281.0,
+        "y": 155.0
+      },
+      "radius": 130.70394026195228
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Donut",
+    "data": {
+      "innerRadius": 22.18828519737385,
+      "center": {
+        "x": 72.80000000000001,
+        "y": 72.00000000000001
+      },
+      "radius": 44.3765703947477
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Rectangle",
+    "data": {
+      "x": 180.8,
+      "y": 239.2,
+      "width": 105.59999999999997,
+      "height": 62.39999999999998
+    }
+  }
+]

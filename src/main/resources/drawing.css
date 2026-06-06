@@ -1,0 +1,113 @@
+/* =========================
+   ROOT PANE
+========================= */
+.root-pane {
+    -fx-background-color: #ffffff;
+    -fx-font-family: "Segoe UI";
+}
+
+/* =========================
+   MENU BAR
+========================= */
+.menu-bar {
+    -fx-background-color: white;
+}
+
+.menu-bar .label {
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+	-fx-font-weight: bold;
+	-fx-background-color: white;
+
+}
+
+.menu-bar .menu:hover {
+    -fx-background-color: white;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+.tool-bar {
+    -fx-background-color: white;
+	    -fx-padding: 5;
+}
+
+/* =========================
+   LEFT PANEL
+========================= */
+.left-panel {
+    -fx-background-color: white;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 0 1 0 0;
+    -fx-padding: 15;
+	-fx-font-weight: bold;
+
+}
+
+/* Title "Shapes:" */
+.left-panel .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* =========================
+   SHAPE BUTTONS (RADIO BUTTONS)
+========================= */
+.shape-button {
+    -fx-background-color: white;
+    -fx-padding: 8 10;
+    -fx-font-size: 13px;
+    -fx-text-fill: #2c3e50;
+	-fx-font-weight: bold;
+
+}
+
+.shape-button:hover {
+    -fx-background-color: #dfe6e9;
+    -fx-background-radius: 6;
+	-fx-font-weight: bold;
+
+}
+
+/* Selected radio button */
+.radio-button:selected {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 6;
+
+}
+
+/* =========================
+   UNDO BUTTON
+========================= */
+.undo-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 6 14;
+    -fx-background-radius: 8;
+}
+
+.undo-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.undo-button:pressed {
+    -fx-background-color: #1f5f8b;
+}
+
+/* =========================
+   CENTER (DRAWING AREA)
+========================= */
+.center {
+    -fx-background-color: white;
+}
+
+/* Optional border for canvas area */
+.drawing-view {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+}

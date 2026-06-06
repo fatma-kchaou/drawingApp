@@ -1,0 +1,38 @@
+[
+  {
+    "className": "com.example.demo1.adapter.HexagonAdapter",
+    "data": {
+      "hexagon": {
+        "x": 191,
+        "y": 101,
+        "r": 227,
+        "areaColor": {
+          "red": 0.6784313917160034,
+          "green": 0.8470588326454163,
+          "blue": 0.9019607901573181,
+          "opacity": 1.0
+        },
+        "borderColor": {
+          "red": 0.0,
+          "green": 0.0,
+          "blue": 0.0,
+          "opacity": 1.0
+        },
+        "selected": false
+      },
+      "insideColor": {
+        "red": 0.6784313917160034,
+        "green": 0.8470588326454163,
+        "blue": 0.9019607901573181,
+        "opacity": 1.0
+      },
+      "outsideColor": {
+        "red": 0.0,
+        "green": 0.0,
+        "blue": 0.0,
+        "opacity": 1.0
+      },
+      "selected": false
+    }
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "className": "com.example.demo1.shapes.Point",
+    "data": {
+      "x": 239.2,
+      "y": 137.60000000000002
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Donut",
+    "data": {
+      "innerRadius": 0.39999999999997726,
+      "center": {
+        "x": 222.39999999999998,
+        "y": 68.8
+      },
+      "radius": 0.7999999999999545
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Donut",
+    "data": {
+      "innerRadius": 72.6955294361352,
+      "center": {
+        "x": 185.60000000000002,
+        "y": 79.2
+      },
+      "radius": 145.3910588722704
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Rectangle",
+    "data": {
+      "x": 217.60000000000002,
+      "y": 224.0,
+      "width": 69.59999999999997,
+      "height": 36.80000000000001
+    }
+  }
+]

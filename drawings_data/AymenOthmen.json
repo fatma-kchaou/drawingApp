@@ -1,0 +1,20 @@
+[
+  {
+    "className": "com.example.demo1.shapes.Rectangle",
+    "data": {
+      "x": 151.2,
+      "y": 153.60000000000002,
+      "width": 438.40000000000003,
+      "height": 64.79999999999995
+    }
+  },
+  {
+    "className": "com.example.demo1.shapes.Rectangle",
+    "data": {
+      "x": 431.20000000000005,
+      "y": 288.0,
+      "width": 0.0,
+      "height": 0.0
+    }
+  }
+]
