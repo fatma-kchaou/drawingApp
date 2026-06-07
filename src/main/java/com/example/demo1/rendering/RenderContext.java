@@ -1,21 +1,55 @@
 package com.example.demo1.rendering;
 
 /**
- * Contexte de rendu global — remplace le champ static dans Shape.
+ * Singleton — Contexte de rendu global (inchangé dans son rôle).
  *
- * Contient la RenderStrategy active (1D/2D/3D).
- * Les Shapes l'interrogent pour savoir comment se dessiner,
- * sans connaître ni stocker la logique de rendu elles-mêmes.
+ * Avant : stockait une RenderStrategy (Strategy Pattern).
+ * Maintenant : stocke une RenderFactory (Abstract Factory Pattern).
+ *
+ * Les Shape appellent toujours RenderContext.getFactory()
+ * et choisissent le bon renderer via createLineRenderer(),
+ * createSurfaceRenderer() ou createPointRenderer().
+ *
+ * DrawingFrame change la fabrique via RenderContext.set(new FlatRenderFactory()).
  */
 public class RenderContext {
 
-    private static RenderStrategy current = new FlatRenderStrategy(); // défaut 2D
+    // ── Singleton ────────────────────────────────────────────────────────────
+    private static final RenderContext instance = new RenderContext();
 
-    public static RenderStrategy get()                          { return current; }
-    public static void           set(RenderStrategy strategy)  { current = strategy; }
+    private RenderContext() {}
 
-    /** Indique si le mode actuel est wireframe (pas de remplissage) */
-    public static boolean isWireframe() {
-        return current instanceof WireframeRenderStrategy;
+    public static RenderContext getInstance() {
+        return instance;
+    }
+
+    // ── Fabrique active (2D par défaut) ──────────────────────────────────────
+    private static RenderFactory current = new FlatRenderFactory();
+
+    /** Retourne la fabrique de rendu actuellement active. */
+    public static RenderFactory getFactory() {
+        return current;
+    }
+
+    /** Change la fabrique active (appelé par DrawingFrame lors du switch 1D/2D/3D). */
+    public static void set(RenderFactory factory) {
+        current = factory;
+    }
+
+    // ── Helpers pratiques utilisés par les Shape ────────────────────────────
+
+    /** Raccourci : renderer pour formes linéaires (Line). */
+    public static RenderFactory.ShapeRenderer lineRenderer() {
+        return current.createLineRenderer();
+    }
+
+    /** Raccourci : renderer pour formes surfaciques (Circle, Rectangle, Donut). */
+    public static RenderFactory.ShapeRenderer surfaceRenderer() {
+        return current.createSurfaceRenderer();
+    }
+
+    /** Raccourci : renderer pour points (Point). */
+    public static RenderFactory.ShapeRenderer pointRenderer() {
+        return current.createPointRenderer();
     }
 }
